@@ -5,12 +5,12 @@
 
 global:
   keycloak:
-    url: "http://activiti-keycloak.REPLACEME/auth"
+    url: "http://activiti-keycloak.35.238.20.59.nip.io/auth"
   gateway:
-    host: &gatewayhost "activiti-cloud-gateway.REPLACEME"
+    host: &gatewayhost "activiti-cloud-gateway.35.238.20.59.nip.io"
 
 activiti-cloud-modeling:
-  enabled: false
+  enabled: true
 
 application:
   runtime-bundle:
@@ -104,7 +104,7 @@ infrastructure:
           path: /
           proxyBufferSize: "16k"
           hosts:
-            - "activiti-keycloak.REPLACEME"
+            - "activiti-keycloak.35.238.20.59.nip.io"
           annotations:
             kubernetes.io/ingress.class: nginx
             nginx.ingress.kubernetes.io/rewrite-target: /

@@ -9,3 +9,9 @@ dependencies:
   repository: https://activiti.github.io/activiti-cloud-charts/
   version: 0.5.0
   condition: activiti-cloud-modeling.enabled,modeling.enabled
+- name: sample-runtime-bundle
+  repository: https://slamkalukas.github.io/helm-repo/
+  version: 0.1.0
+- name: sample-cloud-connector
+  repository: https://slamkalukas.github.io/helm-repo/
+  version: 0.1.0
